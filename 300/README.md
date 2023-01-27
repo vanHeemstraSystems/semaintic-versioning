@@ -91,6 +91,17 @@ If an error occurs, you may want to set tracking information for this branch fir
 $ git branch --set-upstream-to=origin/main main
 ```
 
+Then try the following again:
+
+```
+$ git push -u origin main
+```
+
+If you now refresh the GitHub page of the repository you will see your code there:
+
+https://github.com/vanHeemstraSystems/your-package-name-you-want-to-see-on-npm-lol
+
+
 
 
 MORE ...
