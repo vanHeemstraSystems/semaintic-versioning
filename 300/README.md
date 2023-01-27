@@ -53,6 +53,17 @@ $ cd your-package-name-you-want-to-see-on-npm-lol
 $ git init
 ```
 
+Adhering to modern best practices, we will assure the current branch is not called ```master```, but instead ```main```.
+
+```
+$ git branch -m main
+```
+
+Add all files to your new branch as follows:
+
+```
+$ git add .
+```
 
 
 
