@@ -17,7 +17,23 @@ When asked for a template:
   react-with-storybook
 ```
 
-Choose **basic**
+Choose **basic**.
+
+After npx has created the directory and some files, move inside the newly created directory:
+
+```
+$ cd your-package-name-you-want-to-see-on-npm-lol
+```
+
+
+
+
+
+
+
+
+
+
 
 ## 200 - Create our first GitHub Action
 
