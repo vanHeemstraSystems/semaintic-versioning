@@ -85,7 +85,11 @@ Followed by a push:
 $ git push -u origin main
 ```
 
+If an error occurs, you may want to set tracking information for this branch first, like so:
 
+```
+$ git branch --set-upstream-to=origin/main main
+```
 
 
 
