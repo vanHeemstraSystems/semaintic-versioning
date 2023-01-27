@@ -65,6 +65,25 @@ Add all files to your new branch as follows:
 $ git add .
 ```
 
+Commit your first changes:
+
+```
+$ git commit -m "first commit"
+```
+
+Next, set the remote:
+
+```
+$ git remote add origin git@github.com:vanHeemstraSystems/your-package-name-you-want-to-see-on-npm-lol.git
+```
+
+Followed by a push:
+
+```
+$ git push -u origin main
+```
+
+
 
 
 
