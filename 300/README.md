@@ -31,9 +31,6 @@ Now open your project in Visual Studio Code by typing:
 $ code
 ```
 
-## 200 - Create our first GitHub Action
-
-
 From the previous step, already a directory called ```.github``` was created for you. We will now delete this folder, to create it manually.
 
 ```
@@ -100,6 +97,10 @@ $ git push -u origin main
 If you now refresh the GitHub page of the repository you will see your code there:
 
 https://github.com/vanHeemstraSystems/your-package-name-you-want-to-see-on-npm-lol
+
+## 200 - Create our first GitHub Action
+
+The next step is to create our **GitHub Action** so go to the tab called "Actions" along the top of the repository page on GitHub and click on it.
 
 
 
