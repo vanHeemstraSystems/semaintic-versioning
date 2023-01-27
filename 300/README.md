@@ -151,7 +151,9 @@ jobs:
 ```
 .github/workflows/node.js.yml
 
+As a manner of best practise, rename the file to ```publish.yml`` and save it at its location by clicking **Start commit**, using the default values.
 
+We will now come back to this saved file ```publish.yml``` to make a few changes:
 
 
 
