@@ -40,7 +40,11 @@ From the previous step, already a directory called ```.github``` was created for
 $ rm .github
 ```
 
+At this stage go into GitHub and create a new repository (with any name, it doesn't necessarily need to have the same name as our package). For simplicity we name it the same as our package:
 
+```
+https://github.com/vanHeemstraSystems/your-package-name-you-want-to-see-on-npm-lol
+```
 
 MORE ...
 
