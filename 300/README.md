@@ -25,18 +25,23 @@ After npx has created the directory and some files, move inside the newly create
 $ cd your-package-name-you-want-to-see-on-npm-lol
 ```
 
+Now open your project in Visual Studio Code by typing:
 
-
-
-
-
-
-
-
-
+```
+$ code
+```
 
 ## 200 - Create our first GitHub Action
 
+
+From the rpevious step, already a directory called ```.github``` was created for you. We will now delete this folder, to create it manually.
+
+```
+$ rm .github
+```
+
+
+MORE ...
 
 ## 300 - Setup semantic-release
 
