@@ -46,6 +46,17 @@ At this stage go into GitHub and create a new repository (with any name, it does
 https://github.com/vanHeemstraSystems/your-package-name-you-want-to-see-on-npm-lol
 ```
 
+Now on the terminal inside the directory run the following commands to connect this project to the newly created GitHub repository:
+
+```
+$ cd your-package-name-you-want-to-see-on-npm-lol
+$ git init
+```
+
+
+
+
+
 MORE ...
 
 ## 300 - Setup semantic-release
