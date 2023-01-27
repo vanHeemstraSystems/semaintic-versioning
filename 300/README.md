@@ -34,11 +34,12 @@ $ code
 ## 200 - Create our first GitHub Action
 
 
-From the rpevious step, already a directory called ```.github``` was created for you. We will now delete this folder, to create it manually.
+From the previous step, already a directory called ```.github``` was created for you. We will now delete this folder, to create it manually.
 
 ```
 $ rm .github
 ```
+
 
 
 MORE ...
