@@ -42,7 +42,7 @@ $ rm .github
 
 At this stage go into GitHub and create a new repository (with any name, it doesn't necessarily need to have the same name as our package). For simplicity we name it the same as our package:
 
-** NOTE: ** At this point do **not** create a README.md file (or any other content) yet as this will collide with the files you are about to push to this empty repository later.
+**NOTE:** At this point do **not** create a README.md file (or any other content) yet as this will collide with the files you are about to push to this empty repository later.
 
 ```
 https://github.com/vanHeemstraSystems/your-package-name-you-want-to-see-on-npm-lol
