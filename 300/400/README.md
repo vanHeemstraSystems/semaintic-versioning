@@ -1,71 +1,36 @@
 # 400 - Setup commitizen
 
-MORE  ...
+**WARNING**: Make sure you have **Node** version 18 or newer.
 
+```
+$ node --version
+```
 
+First, install the Commitizen CLI tools:
 
+```
+$ npm install --save-dev commitizen
+```
 
+They have a way for us to set it up, which is:
 
-right i
-11:34
-never know how to type communism so
-11:37
-google will help me out and when you
-11:39
-have communism
-11:41
-you can go over here and set up
-11:43
-committees and and committees and will
-11:45
-open
-11:46
-a window like this every time that you
-11:48
-do get cz
-11:49
-it will open a very very nice window so
-11:52
-it will help you with your commits
-11:54
-and you don't need to know all of those
-11:56
-tedious
-11:57
-messages out of your head and so let's
-12:00
-go over here to
-12:02
-npx and they have a way for us to set it
-12:05
-up
-12:05
-which is over here npx comet is an
-12:09
-init and we will just copy that and you
-12:12
-will see that
-12:12
-as soon as i copy that and let it run
-12:15
-which will be another
-12:16
-two or three minutes so another fast
-12:18
-forward but as soon as that finishes
-12:21
-we will be able to go to our
-12:23
+```
+$ npx commitizen init cz-conventional-changelog --save-dev --save-exact
+```
+
+As soon as we let it run, which will be two or three minutes, but as soon as that finishes go to our ```package.json```.
+
+Add a command called ```commit``` to package.json.
+
+```
+...
+
+```
 package.json
-12:24
-and add over here into our package.json
-12:27
-i'm sorry
-12:28
-over here into our package.json another
-12:31
-command called commit
-12:32
+
+MORE
+
+
 and that commit we'll just do git cc
 12:36
 so commit and i will just do git cz
