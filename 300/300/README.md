@@ -92,7 +92,7 @@ Type your npm username (here: wvanheemstra) and hit ENTER
 $ ? What is your npm password? [input is hidden]
 ```
 
-Type your npom password and hit ENTER
+Type your npm password (minimal 10 characters) and hit ENTER
 
 
 
