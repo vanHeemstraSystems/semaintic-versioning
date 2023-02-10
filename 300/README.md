@@ -181,7 +181,7 @@ on
 
 For now, we will just leave it to be set to ```main``` only.
 
-Okay then the first thing that we have over here is jobs where ```build``` this is the name of our job
+Okay then the first thing that we have over here is jobs where ```build``` is the name of our job.
 
 ```
 ...
