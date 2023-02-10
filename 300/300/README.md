@@ -169,21 +169,36 @@ package.json
 
 MORE
 
-If you keep scrolling to the bottom
-10:12
-of our file
-10:13
-we see a few more changes one is adding
-10:16
-the development dependency
-10:18
-of semantic release which makes sense
-10:20
-and then it's putting
-10:21
-our repository over here which also
-10:24
-makes sense
+If you keep scrolling to the bottom of ```package.json``` we see a few more changes. One is the addition of the npm package ```semantic release``` to the development dependencies.
+
+```
+...
+  "devDependencies": {
+    ...
+    "semantic-release": "^20.1.0"
+  },
+...
+```
+package.json
+
+And then it has added our repository over here:
+
+```
+...
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanHeemstraSystems/your-package-name-you-want-to-see-on-npm-lol.git"
+  }
+...
+```
+package.json
+
+
+
+
+MORE
+
+
 10:25
 so i can now save this go back to our
 10:28
