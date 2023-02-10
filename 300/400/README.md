@@ -6,7 +6,7 @@
 $ node --version
 ```
 
-You can update **Node** on Mac OS as follows:
+You can upgrade **Node** on Mac OS as follows:
 
 ```
 brew update
