@@ -213,7 +213,7 @@ jobs:
 ```
 .github/workflows/publish.yml
 
-You might want to run this in multiple versions of your operating system so if you really want to do that you can come over strategy / matrix and this matrix has all the options that exist. You can add a new line called ```os``` and we will provide it with ```ubuntu-latest``` and ```windows-latest```. Adding those two now means our operating systems available in this matrix are ubuntu latest and windows latest. You can also decide to add mac os latest (i.e. ```macos-latest```) if you want to, as we did.
+You might want to run this in multiple versions of your operating system so if you really want to do that you can come over strategy / matrix and this matrix has all the options that exist. You can add a new line called ```os``` and we will provide it with ```ubuntu-latest``` and ```windows-latest```. You can also decide to add mac os latest (i.e. ```macos-latest```) if you want to, as we did. Adding those three now means our operating systems available in this matrix are ubuntu latest, windows latest, and mac os latest.
 
 ```
 ...
