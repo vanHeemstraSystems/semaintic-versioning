@@ -128,7 +128,7 @@ NPM_TOKEN
 
 So let's continue.
 
-Browse the ```package.json``` file and witness that Semantic Release has already renamed the version from what it was before to the semantic naming, e.g.:
+Browse the ```package.json``` file and witness that Semantic Release has already renamed the version from what it was before (e.g. 0.1.0) to the semantic naming, e.g.:
 
 ```
 ...
@@ -138,186 +138,38 @@ Browse the ```package.json``` file and witness that Semantic Release has already
 ```
 package.json
 
+We no longer need to care about the version, semantic release will do that for us : )
+
+Then if we keep scrolling you will see that within ```scripts``` it also added this semantic release over here. 
+
+```
+...
+  "scripts": {
+     ...
+    "semantic-release": "semantic-release"
+...
+```
+package.json
+
+We will need then to say the branches that we want to release from, because by default semantic release will only do the publish from the master branch.
+
+In our case we are using the ```main``` branch, so let us just add ```--branches main``` before we forget about it.
+
+```
+...
+  "scripts": {
+     ...
+    "semantic-release": "semantic-release --branches main"
+...
+```
+package.json
 
 
 
 
+MORE
 
-
-
-
-MORE ...
-
-
-Let me just do a git pull
-7:17
-because we committed before our github
-7:19
-actions
-7:20
-into our repository so to make sure that
-7:22
-we are
-7:23
-up to date and now we can do npx
-7:26
-semantic release cli setup
-7:29
-and then it will prompt me with my npm
-7:32
-username
-7:33
-in my case it's bmv untuned i will
-7:36
-click enter and now it requests our
-7:39
-username and password so
-7:41
-i will type my password right now
-7:45
-
-
-
-MORE ...
-
-
-i will click enter and at this stage
-7:48
-we are going to need a github
-7:51
-token in order to create this so let's
-7:53
-copy
-7:54
-these bits over here go to your browser
-7:58
-let's paste that url over there and as
-8:02
-you can see
-8:02
-it already by default is setting the
-8:04
-permissions it needs
-8:05
-you need to create a name for this token
-8:08
-so in my case
-8:09
-i will say semantic release for youtube
-8:12
-video so then i can delete this token
-8:15
-because i will not hide this token for
-8:17
-you you can see the token
-8:19
-over here but i will delete it
-8:20
-immediately after the video
-8:22
-so you should never ever show this token
-8:25
-to anyone okay
-8:26
-i will just copy this token let me just
-8:28
-see if this copied yes it did
-8:30
-i come over here i will do ctrl v i will
-8:33
-do
-8:34
-enter and then it's asking what is
-8:37
-our ci system for us it will be the
-8:39
-github actions
-8:41
-and now it will go ahead and create
-8:44
-a new secret inside our repository
-8:48
-for this npm token okay i will show you
-8:51
-as soon as this finishes now that it
-8:53
-finished we can go to our
-8:55
-github repository once again and if i go
-8:58
-over here you will be able to see that
-9:01
-in my repository
-9:03
-i can go to the settings and now going
-9:06
-to the
-9:06
-environment over here in secret i will
-9:09
-click on secrets
-9:10
-and you can see that i have my npm token
-9:13
-over there so based on my username and
-9:16
-password from npm
-9:17
-we get the npm token which we will need
-9:20
-in a few seconds when we do
-9:22
-the npm run semantic release if we go
-9:25
-inside our project once again so i can
-9:27
-do code dot
-9:29
-now inside our vs code we can go into
-9:32
-our git
-9:33
-differences and you can already see that
-9:35
-semantic release changed the version
-9:37
-from
-9:38
-a version that we had before to just a
-9:40
-placeholder as i said at the beginning
-9:42
-of the video we no longer need to care
-9:44
-about the version
-9:44
-semantic release will do that for us
-9:47
-then if we keep scrolling
-9:48
-you will see that it also added this
-9:51
-semantic release over here
-9:53
-for us and we will need then to say the
-9:56
-branches that we want to release from
-9:58
-because by default
-9:59
-semantic release will only do the
-10:02
-publish
-10:03
-from the master branch in our case we
-10:05
-are using mine
-10:06
-so let me just do mine over there before
-10:09
-i forget about it
-10:10
-and if you keep scrolling to the bottom
+If you keep scrolling to the bottom
 10:12
 of our file
 10:13
