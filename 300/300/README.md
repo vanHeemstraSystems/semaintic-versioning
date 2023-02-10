@@ -32,7 +32,7 @@ You should see:
 registry = "https://registry.npmjs.org/"
 ```
 
-Now create the NPM token.
+Now create the NPM token **in a new Terminal window**.
 
 ```
 $ npm token create
