@@ -94,6 +94,19 @@ $ ? What is your npm password? [input is hidden]
 
 Type your npm password (minimal 10 characters) and hit ENTER
 
+```
+$ ? What is your NPM two-factor authentication code? 
+```
+
+Look in your email inbox for the email address attached to your NPM account and find the One-Time-Password (OTP) from the most recent email sent to you by NPM (an 8-digit numeric number). Enter this 8-digit numeric number and hit ENTER.
+
+```
+$ ? Provide a GitHub Personal Access Token (create a token at https://github.com/settings/tokens/new?scopes=repo)
+```
+
+Follow this link https://github.com/settings/tokens/new?scopes=repo in your browser to create such a GitHub Personal Access Token and keep it safe to be pasted here. Hit ENTER.
+
+
 
 
 MORE ...
