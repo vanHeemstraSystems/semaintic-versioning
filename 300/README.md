@@ -300,6 +300,18 @@ Commit the newly created file ```package-lock.json``` and the actions should sta
 
 You could decide to downgrade both ```@size-limit/preset-small-lib``` and ```size-limit``` from 6.0.4 to 5.0.5.
 
+Instead we decided to leave out Node version 14 that caused above error, so our publish.yml file now shows:
+
+```
+...
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x]
+...
+
+```
+.github/workflows/publish.yml
+
 Now the next step we are going to set up is: semantic release.
 
 ## 300 - Setup semantic-release
