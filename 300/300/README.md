@@ -106,6 +106,21 @@ $ ? Provide a GitHub Personal Access Token (create a token at https://github.com
 
 Follow this link https://github.com/settings/tokens/new?scopes=repo in your browser to create such a GitHub Personal Access Token whereas the scope is set to **repo** thus including all access option for repo, and keep it safe to be pasted here. Hit ENTER.
 
+```
+# ? What CI are you using? (Use arrow keys)
+  Travis CI
+  Travis CI Pro
+  TRAVIS CI Enterprise
+  Circle CI
+> GitHub Actions
+  Other (prints tokens)
+```
+
+Use keyboard up/down arrow keys to move the ```>``` to GitHub Actions and hit ENTER to choose GitHub Actions
+
+
+
+
 
 
 
