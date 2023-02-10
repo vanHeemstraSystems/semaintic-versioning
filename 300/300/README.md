@@ -192,7 +192,7 @@ Now, lets commit our changes as follows:
 
 ```
 $ git add . && git commit -m "add semantic-release" && git push
-``
+```
 
 You will see that semantic release will require a specific commit message format and that's based on the Angular Commit Message Conventions.
 
