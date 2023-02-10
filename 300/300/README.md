@@ -35,8 +35,29 @@ registry = "https://registry.npmjs.org/"
 Now create the NPM token **in a new Terminal window**.
 
 ```
+$ npm login
+```
+
+Provide your NPM password when requested.
+
+Next:
+
+```
 $ npm token create
 ```
+
+In response you will be prompted as follows:
+
+```
+cidr_whitelist
+
+readonly: false
+automation: false
+created: DATE AND TIME OF CREATION
+token: YOUR NPM TOKEN
+```
+
+**TIP**: Keep your token somewhere safe for future reference.
 
 First, install semantic-release cli as a dev dependency, as follows, at the package.json level of your repository:
 
