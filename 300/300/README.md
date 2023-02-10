@@ -118,7 +118,15 @@ Follow this link https://github.com/settings/tokens/new?scopes=repo in your brow
 
 Use keyboard up/down arrow keys to move the ```>``` to GitHub Actions and hit ENTER to choose GitHub Actions
 
-Above setup will automatically create a new secret inside of this repository. You will not be prompted anymore. So let's continue.
+Above setup will automatically create a new secret inside of this repository. You will not be prompted anymore. 
+
+You can check it by going to the ```Settings``` tab of your repoisitory, from the left-hand side menu choose "```Secrets and variables```", then "```Actions```". An entry by the name of "***NPM_TOKEN***" will have been added under the ```Secrets``` tab.
+
+```
+NPM_TOKEN
+```
+
+So let's continue.
 
 
 
