@@ -167,7 +167,7 @@ on
 ```
 .github/workflows/publish.yml
 
-Equally, to have the GitHub Action run on pull requests on any branch, set it to '\*' without brackets, like so:
+Equally, to have the GitHub Action run on pull requests on *any* branch, set it to '\*' without brackets, like so:
 
 ```
 ...
