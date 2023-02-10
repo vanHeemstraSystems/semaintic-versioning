@@ -191,7 +191,7 @@ jobs:
 ```
 .github/workflows/publish.yml
 
-We can change it to for example quality, checks quality, any name you want. We will just rename it to ```quality```, because we are going to do the unit testing, the linting everything that you want to validate before you commence with the git publish.
+We can change it to for example quality, checks quality, any name you want. We will just rename it to ```quality```, because we are going to do the unit testing, the linting everything that you want to validate before you commence with the npm publish.
 
 ```
 ...
@@ -201,7 +201,39 @@ jobs:
 ```
 .github/workflows/publish.yml
 
+Now the first thing that we need to check over here is these runs: it's running now on ubuntu the latest version.
 
+```
+...
+jobs:
+  quality:
+
+    runs-on: ubuntu-latest
+...
+```
+.github/workflows/publish.yml
+
+You might want to run this in multiple versions of your operating system so if you really want to do that you can come over strategy / matrix and this matrix has all the options that exist. You can add a new line called ```os``` and we will provide it with ```ubuntu-latest``` and ```windows-latest```. Adding those two now means our operating systems available in this matrix are ubuntu latest and windows latest.
+
+```
+...
+jobs:
+  quality:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+        os: [ ubuntu-latest, windows-latest ]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+...
+```
+.github/workflows/publish.yml
+
+You can also decide to add mac os latest (i.e. ```macos-latest```) if you want to.
+
+Now the only change we need to do is over here i will need to come over here and do the following matrix dot os so this matrix now has two operating systems and one two three four versions of node, so we are going to create eight possible jobs: every single version of node to ubuntu latest and every single version of node to our windows latest so we will have eight jobs running.
 
 
 
