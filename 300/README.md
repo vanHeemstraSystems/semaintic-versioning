@@ -181,6 +181,33 @@ on
 
 For now, we will just leave it to be set to ```main``` only.
 
+Okay then the first thing that we have over here is jobs where "build" this is the name of our job
+
+```
+...
+jobs:
+  build:
+...
+```
+.github/workflows/publish.yml
+
+We can change it to for example quality, checks quality, any name you want. We will just rename it to ```quality```, because we are going to do the unit testing, the linting everything that you want to validate before you commence with the git publish.
+
+```
+...
+jobs:
+  quality:
+...
+```
+.github/workflows/publish.yml
+
+
+
+
+
+
+
+
 
 
 MORE ...
