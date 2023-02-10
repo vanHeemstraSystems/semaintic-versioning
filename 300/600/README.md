@@ -1,0 +1,3 @@
+# 600 - How to handle Pull Requests and Merges in order to keep semantic-release "happy" :)
+
+MORE ...
