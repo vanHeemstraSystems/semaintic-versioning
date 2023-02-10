@@ -2,8 +2,20 @@
 
 Browse to "Semantic-Release CLI" at https://github.com/semantic-release/cli
 
-Semantic release command-line interface (cli) will help us to set up everything for it so the only thing we need to do is an npx or semantic release cli and type setup before we go ahead and do anything 
+Semantic release command-line interface (cli) will help us to set up everything. 
 
+Make sure we have pulled the latest edition of our repository locally:
+
+```
+$ git pull
+```
+
+First, install semantic-release cli as a dev dependency, as follows, at the package.json level of your repository:
+
+```
+$ npm install semantic-release-cli --save-dev
+semantic-release-cli setup
+```
 
 
 
