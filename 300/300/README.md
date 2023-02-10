@@ -10,12 +10,46 @@ Make sure we have pulled the latest edition of our repository locally:
 $ git pull
 ```
 
+**NOTE**: If you do not yet have an NPM Token, create one following these instructions, https://docs.npmjs.com/creating-and-viewing-access-tokens#creating-access-tokens. See also https://github.blog/2021-08-23-npm-registry-deprecating-tls-1-0-tls-1-1/
+
+```
+$ npm token create
+```
+
 First, install semantic-release cli as a dev dependency, as follows, at the package.json level of your repository:
 
 ```
 $ npm install semantic-release-cli --save-dev
 $ semantic-release-cli setup
 ```
+
+You will be prompted as follows:
+
+```
+$ ? What is your npm registry? (http://registry.npmjs.org/)
+```
+
+Hit ENTER to choose the default (http://registry.npmjs.org/).
+
+```
+$ ? Which authentication method is this npm registry using? (Use arrow keys)
+> Token based
+  Legacy (username, password, email)
+```
+
+Use keyboard up/down arrow keys to move the ```>``` to Token and hit ENTER to choose Token
+
+```
+$ ? What is your npm username?
+```
+
+Type your npm username (here: wvanheemstra) and hit ENTER
+
+```
+$ ? What is your npm password? [input is hidden]
+```
+
+Type your npom password and hit ENTER
 
 
 
