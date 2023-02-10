@@ -155,6 +155,31 @@ As a manner of best practise, rename the file to ```publish.yml``` and save it a
 
 We will now come back to this saved file ```publish.yml``` to make a few changes:
 
+If we wanted to trigger our GitHub Action by a pull request on other branches than ```main```, we would make a change like so:
+
+```
+...
+on
+...
+  pull_request:
+    branches: [ "main", "other-branch", "yet-another-branch" ]
+...
+```
+.github/workflows/publish.yaml
+
+Equally, to have the GitHub Action run on pull requests on any branch, set it to "\*", like so:
+
+```
+...
+on
+...
+  pull_request:
+    branches: [ "*" ]
+...
+```
+.github/workflows/publish.yaml
+
+For now, we will just leave it to be set to ```main``` only.
 
 
 
