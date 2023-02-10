@@ -6,6 +6,13 @@
 $ node --version
 ```
 
+You can update **Node** on Mac OS as follows:
+
+```
+brew update
+brew upgrade node
+```
+
 First, install the Commitizen CLI tools:
 
 ```
