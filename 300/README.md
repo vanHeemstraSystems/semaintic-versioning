@@ -268,15 +268,15 @@ First one is just to clone and check out our branch so this one is very needed.
 
 The second one is just to set up node.js and as you can see it's already using that matrix for the node version that we are using
 
-Then is our run commands:
+Then we have our run commands:
 
-The first one is the npm ci, which is similar to npm installed.
+- The first one is the npm ci, which is similar to npm installed.
 
-Then we are building this library.
+- Then we are building this library.
 
-Lastly, we are running tests and you can run a lot of other stuff over here.
+- Lastly, we are running tests and you can run a lot of other stuff over here.
 
-We commit the new file and now. You can see that if you go now to the Actions tab, it will have started already a new action and this action will take anywhere from one minute to five minutes more or less.
+Commit the changes we have applied to ```publish.yml```. You can see that if you go now to the Actions tab, it will have started already a new action and this action will take anywhere from one minute to five minutes more or less.
 
 The more operating systems and the more versions of node.js you put the more jobs will run. If you are in a public repository is not a big deal, but if you are in a private repository you have only 2 000 minutes free per month and after that amount you will start to be charged for it.
 
