@@ -5,6 +5,8 @@ Based on "Fully Automated npm publish using GitHub Actions and Semantic Release"
 
 Based on "Semantic-Release CLI" at https://github.com/semantic-release/cli
 
+Based on "Commitizen" at https://github.com/commitizen/cz-cli
+
 A demo repository is created during this tutorial, which is at https://github.com/vanHeemstraSystems/your-package-name-you-want-to-see-on-npm-lol
 
 ## 100 - Introduction
