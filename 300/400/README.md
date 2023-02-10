@@ -20,6 +20,8 @@ They have a way for us to set it up, which is:
 $ npx commitizen init cz-conventional-changelog --save-dev --save-exact
 ```
 
+WE ARE HERE ...
+
 As soon as we let it run, which will be two or three minutes, but as soon as that finishes go to our ```package.json```.
 
 Add a command called ```commit``` to package.json.
