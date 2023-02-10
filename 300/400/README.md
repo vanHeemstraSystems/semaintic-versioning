@@ -6,12 +6,7 @@
 $ node --version
 ```
 
-You can upgrade **Node** on Mac OS as follows:
-
-```
-brew update
-brew upgrade node
-```
+You can upgrade **Node** as described at https://blog.hubspot.com/website/update-node-js
 
 First, install the Commitizen CLI tools:
 
