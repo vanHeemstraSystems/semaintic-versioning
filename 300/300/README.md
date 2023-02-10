@@ -118,7 +118,7 @@ Follow this link https://github.com/settings/tokens/new?scopes=repo in your brow
 
 Use keyboard up/down arrow keys to move the ```>``` to GitHub Actions and hit ENTER to choose GitHub Actions
 
-Above setup will automatically create a new secret inside of this repository. You will not be prompetd anymore. So let's continue.
+Above setup will automatically create a new secret inside of this repository. You will not be prompted anymore. So let's continue.
 
 
 
