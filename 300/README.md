@@ -280,6 +280,22 @@ We commit the new file and now. You can see that if you go now to the Actions ta
 
 The more operating systems and the more versions of node.js you put the more jobs will run. If you are in a public repository is not a big deal, but if you are in a private repository you have only 2 000 minutes free per month and after that amount you will start to be charged for it.
 
+**NOTE**: You may find that a combination of an operating system and a node version fails, with the following error:
+
+```
+npm ERR! The `npm ci` command can only install with an existing package-lock.json or
+npm ERR! npm-shrinkwrap.json with lockfileVersion >= 1. Run an install with npm@5 or
+npm ERR! later to generate a package-lock.json file, then try again.
+```
+
+Follow the advice given and first generate the ```package-lock.json``` as follows, inside the directory of ```package.json``` run:
+
+```
+$ npm install
+```
+
+Commit the newly created file ```package-lock.json``` and the actions should start automatically. Check if now all succeed, from the Actions tab.
+
 Now the next step we are going to set up is: semantic release.
 
 ## 300 - Setup semantic-release
