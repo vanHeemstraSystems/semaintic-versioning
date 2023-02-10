@@ -225,13 +225,13 @@ jobs:
     strategy:
       matrix:
         node-version: [14.x, 16.x, 18.x]
-        os: [ubuntu-latest, windows-latest]
+        os: [ubuntu-latest, windows-latest, macos-latest]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 ...
 ```
 .github/workflows/publish.yml
 
-You can also decide to add mac os latest (i.e. ```macos-latest```) if you want to.
+You can also decide to add mac os latest (i.e. ```macos-latest```) if you want to, as we did.
 
 Now the only change we need to do is for ```runs-on``` to replace its previous content (```ubuntu-latest```) with ```${{ matrix.os }}```:
 
@@ -245,7 +245,7 @@ jobs:
 ```
 .github/workflows/publish.yml
 
-So this matrix now has two operating systems and four versions of node, so we are going to create eight possible jobs: every single version of node to ubuntu latest and every single version of node to our windows latest so we will have eight jobs running.
+So this matrix now has three operating systems and three versions of node (```14.x, 16.x, 18.x```), so we are going to create nine possible jobs: every single version of node to ubuntu latest, windows latest, and mac os latest so we will have nine jobs running.
 
 
 
