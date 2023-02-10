@@ -12,6 +12,28 @@ $ git pull
 
 **NOTE**: If you do not yet have an NPM Token, create one following these instructions, https://docs.npmjs.com/creating-and-viewing-access-tokens#creating-access-tokens. See also https://github.blog/2021-08-23-npm-registry-deprecating-tls-1-0-tls-1-1/
 
+If you see a TLS error message instead, we encourage you to upgrade to a currently supported version of Node.js and the latest version of npm v7.
+
+Also set the URL to the NPM Registry to use the **secure** https, instead of the unsecure http:
+
+```
+$ npm config set registry https://registry.npmjs.org/
+```
+
+Check is above configuration change was successful with:
+
+```
+$ npm config list
+```
+
+You should see:
+
+```
+registry = "https://registry.npmjs.org/"
+```
+
+Now create the NPM token.
+
 ```
 $ npm token create
 ```
@@ -29,7 +51,7 @@ You will be prompted as follows:
 $ ? What is your npm registry? (http://registry.npmjs.org/)
 ```
 
-Hit ENTER to choose the default (http://registry.npmjs.org/).
+Enter https://registry.npmjs.org and hit ENTER to choose the **secure** version of http://registry.npmjs.org/.
 
 ```
 $ ? Which authentication method is this npm registry using? (Use arrow keys)
