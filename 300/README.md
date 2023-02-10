@@ -312,7 +312,7 @@ Instead we decided to leave out Node version 14 that caused above error, so our 
 ```
 .github/workflows/publish.yml
 
-All tests are successful, hence copied the code to ```Create status badge``` which you can find at the Action tab under the button "..." and pasted the code in the README.md file in the root directory of the repository:
+All tests are successful, hence copied the code from ```Create status badge``` which you can find at the Action tab under the button "..." and pasted the copied code into the README.md file in the root directory of the repository:
 
 ```
 [![Node.js CI](https://github.com/vanHeemstraSystems/your-package-name-you-want-to-see-on-npm-lol/actions/workflows/publish.yml/badge.svg)](https://github.com/vanHeemstraSystems/your-package-name-you-want-to-see-on-npm-lol/actions/workflows/publish.yml)
