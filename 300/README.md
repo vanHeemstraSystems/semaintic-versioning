@@ -165,7 +165,7 @@ on
     branches: [ "main", "other-branch", "yet-another-branch" ]
 ...
 ```
-.github/workflows/publish.yaml
+.github/workflows/publish.yml
 
 Equally, to have the GitHub Action run on pull requests on any branch, set it to "\*", like so:
 
@@ -177,7 +177,7 @@ on
     branches: [ "*" ]
 ...
 ```
-.github/workflows/publish.yaml
+.github/workflows/publish.yml
 
 For now, we will just leave it to be set to ```main``` only.
 
