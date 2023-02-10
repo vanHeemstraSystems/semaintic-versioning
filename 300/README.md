@@ -233,7 +233,19 @@ jobs:
 
 You can also decide to add mac os latest (i.e. ```macos-latest```) if you want to.
 
-Now the only change we need to do is over here i will need to come over here and do the following matrix dot os so this matrix now has two operating systems and one two three four versions of node, so we are going to create eight possible jobs: every single version of node to ubuntu latest and every single version of node to our windows latest so we will have eight jobs running.
+Now the only change we need to do is for ```runs-on``` to replace its previous content (```ubuntu-latest```) with ```${{ matrix.os }}```:
+
+```
+...
+jobs:
+  quality:
+
+    runs-on: ${{ matrix.os }}
+...
+```
+.github/workflows/publish.yml
+
+So this matrix now has two operating systems and four versions of node, so we are going to create eight possible jobs: every single version of node to ubuntu latest and every single version of node to our windows latest so we will have eight jobs running.
 
 
 
