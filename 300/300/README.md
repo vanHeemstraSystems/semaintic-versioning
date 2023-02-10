@@ -104,7 +104,7 @@ Look in your email inbox for the email address attached to your NPM account and 
 $ ? Provide a GitHub Personal Access Token (create a token at https://github.com/settings/tokens/new?scopes=repo)
 ```
 
-Follow this link https://github.com/settings/tokens/new?scopes=repo in your browser to create such a GitHub Personal Access Token and keep it safe to be pasted here. Hit ENTER.
+Follow this link https://github.com/settings/tokens/new?scopes=repo in your browser to create such a GitHub Personal Access Token whereas the scope is set to **repo** thus including all access option for repo, and keep it safe to be pasted here. Hit ENTER.
 
 
 
