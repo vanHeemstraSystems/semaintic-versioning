@@ -296,6 +296,10 @@ $ npm install
 
 Commit the newly created file ```package-lock.json``` and the actions should start automatically. Check if now all succeed, from the Actions tab.
 
+**Note**: If you get following error: ```Cannot read property '@size-limit/preset-small-lib' of undefined```, look for a resolution here https://github.com/jaredpalmer/tsdx/issues/1093
+
+You could decide to downgrade both ```@size-limit/preset-small-lib``` and ```size-limit``` from 6.0.4 to 5.0.5.
+
 Now the next step we are going to set up is: semantic release.
 
 ## 300 - Setup semantic-release
