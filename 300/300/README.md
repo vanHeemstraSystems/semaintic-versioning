@@ -128,6 +128,20 @@ NPM_TOKEN
 
 So let's continue.
 
+Browse the ```package.json``` file and witness that Semantic Release has already renamed the version from what it was before to the semantic naming, e.g.:
+
+```
+...
+
+"version": "0.0.0-development",
+...
+```
+package.json
+
+
+
+
+
 
 
 
