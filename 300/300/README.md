@@ -14,7 +14,7 @@ First, install semantic-release cli as a dev dependency, as follows, at the pack
 
 ```
 $ npm install semantic-release-cli --save-dev
-semantic-release-cli setup
+$ semantic-release-cli setup
 ```
 
 
