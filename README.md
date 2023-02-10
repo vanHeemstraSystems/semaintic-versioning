@@ -3,6 +3,8 @@ semantic-versioning
 
 Based on "Fully Automated npm publish using GitHub Actions and Semantic Release" at https://www.youtube.com/watch?v=QZdY4XYbqLI
 
+Based on "Semantic-Release CLI" at https://github.com/semantic-release/cli
+
 A demo repository is created during this tutorial, which is at https://github.com/vanHeemstraSystems/your-package-name-you-want-to-see-on-npm-lol
 
 ## 100 - Introduction
