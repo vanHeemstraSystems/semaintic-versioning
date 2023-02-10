@@ -164,11 +164,6 @@ In our case we are using the ```main``` branch, so let us just add ```--branches
 ```
 package.json
 
-
-
-
-MORE
-
 If you keep scrolling to the bottom of ```package.json``` we see a few more changes. One is the addition of the npm package ```semantic release``` to the development dependencies.
 
 ```
@@ -193,55 +188,21 @@ And then it has added our repository over here:
 ```
 package.json
 
+Now, lets commit our changes as follows:
+
+```
+$ git add . && git commit -m "add semantic-release" && git push
+``
+
+You will see that semantic release will require a specific commit message format and that's based on the angular commit message conventions.
+
 
 
 
 MORE
 
 
-10:25
-so i can now save this go back to our
-10:28
-command line
-10:30
-and then the the next thing that we want
-10:32
-to do let me just do
-10:33
-a git add dot i will do a git commit
-10:37
-and then we can go to our github
-10:39
-repository and play once again with the
-10:41
-github actions
-10:42
-so let me just add semantic
-10:46
-release i will do a git push
-10:49
-and now that you have this
-10:52
-um pushed into our repository we can go
-10:55
-over here and if you start to see how
-10:58
-semantic release works you will see that
-11:00
-semantic release will require a specific
-11:04
-commit message format and that's based
-11:06
-on the angular commit format if i'm not
-11:08
-mistaken
-11:09
-let me just say angular over here and
-11:12
-yes
-11:13
-it's based on the angular commit message
-11:15
+
 conventions and so what does it mean let
 11:17
 me just zoom this for you
