@@ -35,7 +35,7 @@ Add a command called ```commit``` to package.json.
 ```
 package.json
 
-You should still type ```git add .`` to add any changed files to your staging, before you commit.
+You should still type ```git add .``` to add any changed files to your staging, before you commit.
 
 ```
 $ git add .
