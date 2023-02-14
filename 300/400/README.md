@@ -20,66 +20,42 @@ They have a way for us to set it up, which is:
 $ npx commitizen init cz-conventional-changelog --save-dev --save-exact
 ```
 
-WE ARE HERE ...
-
 As soon as we let it run, which will be two or three minutes, but as soon as that finishes go to our ```package.json```.
 
 Add a command called ```commit``` to package.json.
 
 ```
 ...
-
+"scripts": {
+  ...
+  "commit": "git-cz",
+  ...
+},
+...  
 ```
 package.json
 
-MORE
+Now instead of typing ```commit```, we will be typing ```npm run commit``` from now on.
+
+```
+$ npm run commit
+```
+
+Now git cz will run and you will get these very nice message helpers for you
+
+So, let's say that we added a new **feature**, whatever feature that was. And let's say that feature is part of you creating a blog, and it's in the user settings that you've changed something. 
+
+So you will do user settings you will click enter:
+
+```
+$ feat/
+```
 
 
-and that commit we'll just do git cc
-12:36
-so commit and i will just do git cz
-12:40
-right there right and now i can go back
-12:43
-to my terminal
-12:44
-and it didn't finish yet so right now i
-12:47
-will fast forward this for you
-12:49
-right now when it finished you can still
-12:51
-do your pit. like you were doing before
-12:54
-but now instead of doing git commit we
-12:56
-will do
-12:57
-npm run commit and when you do this
-13:00
-npm run commit now git cz will run let
-13:03
-me just run this again
-13:05
-git cz will run and you will get these
-13:08
-very very nice message helpers for you
-13:11
-so
-13:11
-let's say that we added a new feature
-13:14
-whatever feature that was
-13:15
-and let's say that feature you are
-13:17
-creating a blog
-13:18
-and it's on the user settings that you
-13:21
-change something so you will do
-13:23
-user settings you will click enter and
+WE ARE HERE 
+
+
+and
 13:25
 now over here you can put a message
 13:27
