@@ -188,6 +188,17 @@ And then it has added our repository over here:
 ```
 package.json
 
+Add the following to avoid NPM from wanting payment:
+
+```
+...
+"publishConfig": {
+    "access": "public"
+  },
+...  
+````
+package.json
+
 Now, lets commit our changes as follows:
 
 ```
