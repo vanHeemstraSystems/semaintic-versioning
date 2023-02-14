@@ -16,8 +16,6 @@ See [README.md](./300/README.md)
 
 See [README.md](./400/README.md)
 
-WE ARE HERE
-
 ## 500 - Create publish job inside GitHub Actions using semantic-release
 
 See [README.md](./500/README.md)
@@ -25,3 +23,5 @@ See [README.md](./500/README.md)
 ## 600 - How to handle Pull Requests and Merges in order to keep semantic-release "happy" :)
 
 See [README.md](./600/README.md)
+
+WE ARE HERE
