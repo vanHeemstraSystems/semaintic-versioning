@@ -141,8 +141,8 @@ We type the following after **publish:**:
     ...
 ...
   publish:
-    if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/main' }}
     needs: [quality]
     steps:
     - uses: actions/checkout@v3
