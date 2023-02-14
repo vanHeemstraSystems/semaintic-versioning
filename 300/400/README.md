@@ -119,186 +119,50 @@ Back in GitHub (https://github.com/vanHeemstraSystems/your-package-name-you-want
 $ cd .github/workflows/publish.yml
 ```
 
-Add a new line to the bottom of the file as follows, at the same indentation level as ```quality```:
+Add a new line to the bottom of the file called **publish:** as follows, at the same indentation level as ```quality```:
 
 ```
+...
+  quality:
+    ...
 ...
   publish:
 ```
 .github/workflows/publish.yml
 
 
-If after ```publish:``` you enter a Next Line (with ENTER) and CTRL + Spacebar you'll get a list of all commands that you want to have.
+If after ```publish:``` you enter a Next Line (with ENTER) and CTRL + Spacebar you'll get a list of all commands that you want to have as auto-complete.
 
+We type the following after **publish:**:
+
+```
+...
+  quality:
+    ...
+...
+  publish:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    needs: [quality]
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run semantic-release    
+```
+.github/workflows/publish.yml
+
+Semantic release will understand the commits that we have and decide the next version to run.
 
 
 WE ARE HERE
 
 
 
-
-
-we can go over here to our github
-14:12
-actions right now so
-14:14
-i will just go to my code and i will
-14:17
-open
-14:18
-our workflows folder the publish yaml
-14:21
-file
-14:21
-and i will click on the edit button and
-14:24
-over here you will see
-14:26
-why i love to use this bit because if
-14:28
-you come over here
-14:30
-you have all the helpers that you might
-14:32
-want to have
-14:33
-so i will call this next job i will call
-14:36
-it the publish
-14:37
-job itself so i will do publish i will
-14:40
-click
-14:41
-now enter and over here if i do control
-14:44
-space
-14:45
-you can see that i have autocomplete for
-14:48
-everything
-14:48
-i might want to have i will say that it
-14:51
-will run for example
-14:52
-on ubuntu latest and i will also say
-14:56
-that
-14:56
-in this specific job i will need the
-14:59
-previous job
-15:00
-to be finalized in this case the quality
-15:03
-job so
-15:04
-if i unit test files into our quality
-15:07
-job
-15:08
-over here i don't want my publish job to
-15:10
-run
-15:11
-right in a second i will also add
-15:14
-an if over there in order to only
-15:17
-run these if we are in master
-15:20
-okay so in case we are in in a pull
-15:23
-request
-15:24
-like i'm saying here let's say we are in
-15:26
-a pull request to master
-15:27
-this will run in the branch so i don't
-15:29
-want to publish from that branch
-15:31
-i really want to publish when the commit
-15:33
-is on master
-15:34
-not when there is a pull request to
-15:36
-master so we will add that if in a few
-15:38
-seconds
-15:39
-but before we add that if now we are in
-15:42
-a
-15:42
-very good stage to say the steps and so
-15:46
-let's just do the steps and in those
-15:49
-steps
-15:50
-i will say the same thing that we said
-15:51
-before i will use
-15:53
-the checkout and i will set the
-15:56
-environment for node.js
-15:58
-so let me just come over here do a
-16:00
-control v
-16:01
-and at this stage the last bit we want
-16:03
-to do is
-16:04
-npmci just to install our packages
-16:08
-and as you can see on the right side of
-16:10
-the screen
-16:11
-you can have a cache over there so if
-16:14
-you feel
-16:15
-that doing npmci in two different stages
-16:18
-of your process
-16:19
-is making stuff a little bit slower you
-16:22
-can use this
-16:23
-action over there called cache and it
-16:26
-will
-16:26
-keep your node modules into cache if you
-16:28
-want to right
-16:30
-now the next step after we do the npmci
-16:33
-will be to run let me just remove these
-16:36
-spices
-16:37
-will be to run semantic release
-16:40
-right and now as we have this we will
-16:43
-run semantic release
-16:44
-semantic release will understand the
-16:46
-commits that we have and decide the next
-16:48
-version to run
 16:50
 before we just commit this bit let's
 16:52
