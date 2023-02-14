@@ -41,7 +41,7 @@ Now instead of typing ```commit```, we will be typing ```npm run commit``` from 
 $ npm run commit
 ```
 
-Now git cz will run and you will get these very nice message helpers for you
+Now git cz will run and you will get these very nice message helpers for you.
 
 So, let's say that we added a new **feature**, whatever feature that was. And let's say that feature is part of you creating a blog, and it's in the user settings that you've changed something. 
 
