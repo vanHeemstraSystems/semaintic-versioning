@@ -109,14 +109,35 @@ Now we can do a git push:
 $ git push
 ```
 
+You will see that all of those changed files are now there on GitHub. See https://github.com/vanHeemstraSystems/your-package-name-you-want-to-see-on-npm-lol
+
+---
+
+Back in GitHub (https://github.com/vanHeemstraSystems/your-package-name-you-want-to-see-on-npm-lol), go to the GitHub Action we created earlier:
+
+```
+$ cd .github/workflows/publish.yml
+```
+
+Add a new line to the bottom of the file as follows, at the same indentation level as ```quality```:
+
+```
+...
+  publish:
+```
+.github/workflows/publish.yml
+
+
+If after ```publish:``` you enter a Next Line (with ENTER) and CTRL + Spacebar you'll get a list of all commands that you want to have.
+
+
+
 WE ARE HERE
 
-and you will see that all of those files
-14:06
-are now over there on github action on
-14:09
-github
-14:10
+
+
+
+
 we can go over here to our github
 14:12
 actions right now so
