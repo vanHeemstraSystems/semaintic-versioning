@@ -164,225 +164,28 @@ Semantic release will understand the commits that we have and decide the next ve
 Now commit our changes to .github/workflows/publish.yml
 
 
+In the Actions tab in GitHub you can follow the process of where the new code will be qualified and is successfull pushed to NPM registry with the publish section.
+
+**NOTE**: If the ```publish``` section fails with below error:
+
+```
+Run npm run semantic-release
+
+> your-package-name-you-want-to-see-on-npm-lol@0.0.0-development semantic-release
+> semantic-release --branches main
+
+[semantic-release]: node version >=18 is required. Found v16.19.0.
+
+See https://github.com/semantic-release/semantic-release/blob/master/docs/support/node-version.md for more details and solutions.
+Error: Process completed with exit code 1.
+```
+
+Then, remove the Node versions that are incompatible with Semantic Release from your matrix, then try again. 
+
 
 WE ARE HERE
 
-
-
-16:50
-before we just commit this bit let's
-16:52
-just go
-16:53
-over here and as you can see in this
-16:56
-context i will leave all of these urls
-16:58
-into the video description if you want
-16:59
-to investigate it a bit more
-17:01
-yourself right but we can have this if
-17:04
-that i had already highlighted
-17:06
-and once again we will have autocomplete
-17:10
-for this but what's happening over here
-17:12
-is just
-17:12
-myself checking if the reference where
-17:15
-we are on
-17:15
-is the mind branch and if it is i want
-17:18
-to run my action
-17:20
-so i can come over here after the runs
-17:23
-on
-17:23
-i will put that if and as i was saying
-17:26
-to you if i do github dot
-17:28
-as you can see i have all of the
-17:30
-autocompletes that you might want to
-17:31
-have
-17:32
-and that's the main reason i run
-17:35
-all my actions code inside this little
-17:38
-editor
-17:39
-okay now that we have all of them and
-17:42
-i think we have everything to publish
-17:44
-the first version
-17:46
-of our package so let's do a commit
-17:49
-let's just say something over here
-17:51
-added publish job for example
-17:54
-right i will commit that one and now
-17:57
-if i go to the actions we will see if it
-18:00
-will run
-18:01
-or not it might run it might fail we
-18:04
-will see
-18:05
-and then we will fix it we can already
-18:08
-see that our action failed so we can go
-18:10
-inside and see what it felt and you can
-18:14
-click
-18:14
-on the job click once again and we can
-18:17
-see that
-18:18
-it failed so let's just read the error
-18:20
-can only install packages when your
-18:22
-package.json and package log
-18:24
-or are in sync please update your log
-18:27
-file
-18:27
-with an npm installed so let's just do
-18:30
-that
-18:30
-let's just do an npm first a git pool
-18:34
-then an npm install this once again will
-18:36
-take
-18:37
-a few minutes to run
-18:41
-now we can commit this again and
-18:44
-we will see that our actions will then
-18:48
-run
-18:48
-so i will just do an asd
-18:52
-in a fix i will just say asd isd in the
-18:55
-commit
-18:56
-i really don't care that much about the
-18:58
-commit message
-18:59
-at this stage right i just want to push
-19:01
-it
-19:02
-to then see our action to run so if i
-19:05
-come
-19:06
-over here and i now click on actions and
-19:08
-other actions started
-19:10
-we can click over here and hopefully
-19:13
-this time all our actions will run and
-19:16
-when they run we will have a version on
-19:19
-npm
-19:22
-to be honest even before it finished i
-19:24
-am already 100 sure it will fail
-19:27
-because we didn't put our npm underscore
-19:29
-token
-19:30
-as the environment variable so while
-19:32
-this thing
-19:33
-will run and i'm 100 sure it will file
-19:37
-we can go already into here open
-19:40
-our github actions in
-19:44
-our vs code and the only thing i'm going
-19:46
-to do
-19:47
-over here at the bottom will be to have
-19:49
-an environment
-19:51
-and that environment we will just do the
-19:53
-following
-19:54
-oops one two i will say npm
-19:58
-token column and then
-20:01
-i will just say the secrets secrets
-20:04
-dot npm underscore oops
-20:08
-underscore token npm token so let's put
-20:11
-this one
-20:12
-secrets dot npm uh gita
-20:16
-git up token we can even copy paste
-20:20
-to avoid any typo i will save this one
-20:24
-we can now come on to our command line
-20:28
-do our run acp
-20:31
-we can even say that it was a fix
-20:34
-package
-20:34
-json and now add add git
-20:38
-up token just to have a better message
-20:42
-for once and now this one
-20:45
-will commit and now we can go
-20:48
-over here to our actions click in
-20:51
-actions click on this one and
-20:55
-wait for it to run once again
-20:59
-and as you can see now we have a
+As you can see now we have a
 21:01
 successful job
 21:02
