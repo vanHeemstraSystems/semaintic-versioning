@@ -158,6 +158,9 @@ We type the following after **publish:**:
 
 Semantic release will understand the commits that we have and decide the next version to run.
 
+Now commit our changes to .github/workflows/publish.yml
+
+
 
 WE ARE HERE
 
