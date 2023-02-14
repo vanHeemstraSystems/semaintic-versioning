@@ -152,7 +152,10 @@ We type the following after **publish:**:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - run: npm run semantic-release    
+    - run: npm run semantic-release
+      env:
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 .github/workflows/publish.yml
 
